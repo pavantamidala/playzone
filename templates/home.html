@@ -1,1 +1,8 @@
-<h1>pavan</h1>
+<h1>PlayZone</h1>
+<a href=''>PUBG Tournaments</a>
+<a>PUBG Lite Tournaments</a>
+<ul>
+{% for pubg in latest_pubg_list %}
+    <li>{{ pubg.type }}</li>
+{% endfor %}
+</ul>

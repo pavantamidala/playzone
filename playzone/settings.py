@@ -56,7 +56,7 @@ ROOT_URLCONF = 'playzone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates','template2')],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),os.path.join(BASE_DIR,'templates2')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

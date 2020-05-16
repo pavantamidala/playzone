@@ -5,3 +5,7 @@ from django.contrib import admin
 
 
 
+
+from .models import PubgTournaments
+
+admin.site.register(PubgTournaments)
