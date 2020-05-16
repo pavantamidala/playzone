@@ -19,10 +19,6 @@ from django.urls import path,include
 urlpatterns = [
     path('pubg', include('pubg.urls')),
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('register/',include("register.urls")),
-=======
     path('',include("home.urls")),
     path('pubglite',include("PubgLite.urls")),
->>>>>>> e9b9e34290a59b402c55c91cbf901657ad9a4d52
 ]

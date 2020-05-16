@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import PubgTournaments
 from django.template import loader
 
-def home(request):
+def Pubg(request):
         latest_pubg_list = PubgTournaments.objects.order_by('time')[:5]
         template = loader.get_template('Pubg.html')
         context = {
