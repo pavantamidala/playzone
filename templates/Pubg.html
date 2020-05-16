@@ -7,38 +7,41 @@
   <tr>
     <th colspan=3 style="text-align:center;text-decoration: underline;">Match Details</th>
   </tr>
+  {% for publist in latest_pubg_list %}
   <tr>
     <td style="text-align:right;">Type</td>
     <td>:</td>
-    <td> squad/duo/solo</td>
+    <td> {{ publist.type }}</td>
 
   </tr>
   <tr>
     <td style="text-align:right;">Map</td>
     <td>:</td>
-    <td>Erangel/Sanhok/Miramer</td>
+    <td>{{publist.map}}</td>
 
   </tr>
   <tr>
   <td style="text-align:right;">EntryFees(per person)</td>
     <td>:</td>
-    <td>Free</td>
+    <td>{{publist.entryFees}}</td>
     </tr>
   <tr>
     <td style="text-align:right;">Time</td>
     <td>:</td>
-    <td>**</td>
+    <td>{{publist.time}}</td>
   </tr>
   <tr><td style="text-align:right;">Payment(Gpay/PhonePe)</td>
   <td>:</td>
-  <td>******</td>
+  <td{{publist.payMode}}td>
   </tr>
   <tr><td style="text-align:right;">Further Details</td>
   <td>:</td>
   <td>
-  *****</td>
+    {{publist.furtherInfo}}</td>
 
   </tr>
+  {% endfor %}
+
 </table>
 
 </body>
