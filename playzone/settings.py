@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pubg',
-    'register',
+    'home',
+    'PubgLite',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'playzone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates','template2')],
+        'DIRS': [os.path.join(BASE_DIR,'templates',)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

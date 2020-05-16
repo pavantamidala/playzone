@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('', include('pubg.urls')),
+    path('pubg', include('pubg.urls')),
     path('admin/', admin.site.urls),
-    path('',include("register,urls")),
+    path('',include("home.urls")),
+    path('pubglite',include("PubgLite.urls")),
 ]
