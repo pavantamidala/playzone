@@ -35,7 +35,6 @@ clyent<=1.2.1
 colorama<=0.4.1
 conda<=4.3.16
 conda-build<=3.18.9
-conda-verify<=3.4.2
 contextlib2<=0.6.0
 cryptography<=2.7
 cycler<=0.10.0
